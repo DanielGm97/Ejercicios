@@ -1,52 +1,13 @@
+# Desarrollar un programa que sume los dígitos de un número ingresado por el usuario.
 
-MORSE_CODE = {
-  'A': '.-', 
-  'B': '-...',
-  'C': '-.-.', 
-  'D': '-..', 
-  'E': '.',
-  'F': '..-.', 
-  'G': '--.',
-  'H': '....',
-  'I': '..',
-  'J': '.---', 
-  'K': '-.-', 
-  'L': '.-..',
-  'M': '--', 
-  'N': '-.', 
-  'O': '---', 
-  'P': '.--.',
-  'Q': '--.-', 
-  'R': '.-.', 
-  'S': "...", 
-  'T': '-',
-  'U': "..-", 
-  'V': "...-", 
-  'W': ".--", 
-  'X': "-..-",
-  'Y': "-.--", 
-  'Z': "--..", 
-  '0': "-----",
-  '1': ".----", 
-  '2': "..---", 
-  '3': "...--", 
-  '4': "....-",
-  '5': ".....", 
-  '6': "-....", 
-  '7': "--...", 
-  '8': "---..",
-  '9': "----.",
-  '.': ".-.-.-", 
-  ',': "--..--",
-  '?': "..--..",
-  ' ': "/"
-}
+def ingresa_digitos():
+    calculo = (input("introduce digitos: "))
+    suma=0
+   
+    for i in calculo:
+        suma+=int(i)
+    return suma
 
-texto = input("Introduce tu palabra o texto: ")
+resultado=ingresa_digitos()
 
-conversion = ""
-
-for  i in texto.upper():
-    conversion+= MORSE_CODE[i] + " "
-
-print(conversion)
+print(f"El resultado de la suma es: {resultado}")

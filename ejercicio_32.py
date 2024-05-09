@@ -1,10 +1,18 @@
-#	Hacer un programa que calcule el área y el volumen de una esfera con el radio ingresado por el usuario.
-import math
-
-
-radio= float(input("introduce el radio de la esfera: "))
-
-volumen= 4/3*math.pi * radio**3
-area= 4*math.pi * radio**2
-
-print(f"el volumen es: {volumen} y el area es: {area}")
+ # Escribe un programa que muestre por consola (con un print) los
+ # números de 1 a 100 (ambos incluidos y con un salto de línea entre
+ # cada impresión), sustituyendo los siguientes:
+ # - Múltiplos de 3 por la palabra "fizz".
+ # - Múltiplos de 5 por la palabra "buzz".
+ #- Múltiplos de 3 y de 5 a la vez por la palabra "fizzbuzz".
+ 
+for i in range(1,101):
+    if i %3 == 0 and i%5==0:
+        print("fizzbuzz\n")
+    elif i%5==0:
+        print("buzz\n")
+    elif  i %3 == 0:
+        print("fizz\n")
+    else: 
+        print(i)
+        
+ 

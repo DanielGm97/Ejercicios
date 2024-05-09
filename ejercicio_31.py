@@ -1,13 +1,10 @@
-# Desarrollar un programa que sume los dígitos de un número ingresado por el usuario.
+#	Hacer un programa que calcule el área y el volumen de una esfera con el radio ingresado por el usuario.
+import math
 
-def ingresa_digitos():
-    calculo = (input("introduce digitos: "))
-    suma=0
-   
-    for i in calculo:
-        suma+=int(i)
-    return suma
 
-resultado=ingresa_digitos()
+radio= float(input("introduce el radio de la esfera: "))
 
-print(f"El resultado de la suma es: {resultado}")
+volumen= 4/3*math.pi * radio**3
+area= 4*math.pi * radio**2
+
+print(f"el volumen es: {volumen} y el area es: {area}")
